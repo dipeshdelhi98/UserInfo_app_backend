@@ -1,0 +1,53 @@
+<%-include('./partials/header.ejs')%>
+
+
+
+<div class="jumbotron jumbotron-fluid">
+   <a href="/users" style="float: right;  margin-right: 100px;"> <i class="fa fa-eye fa-2x" style="color: brown;" aria-hidden="true" >View  All Users</i></a>
+    <div class="container">
+        
+      <h1 class="display-6" style="text-align: center;">ADD User Information</h1>
+    </div>
+  </div>
+
+  <form action="/" method="POST" autocomplete="off">
+
+    
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">  <i class="fa fa-user" style="font-size: 24px; color: red;" aria-hidden="true"></i></span>
+    </div>
+    <input type="text" class="form-control"  placeholder="Username" name="username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">  <i class="fa fa-envelope" style="font-size: 24px; color: yellow;" aria-hidden="true"></i></span>
+    </div>
+    <input type="text" class="form-control" name="email" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+  </div>
+  
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">  <i class="fa fa-phone" style="font-size: 24px; color: green;" aria-hidden="true"></i></span>
+    </div>
+    <input type="number" class="form-control" name="phone_no" placeholder="Phone Number" aria-label="Phone" aria-describedby="basic-addon1">
+  </div>
+ 
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">  <i class="fa fa-address-card" style="font-size: 24px; color:purple;" aria-hidden="true"></i></span>
+    </div>
+   <input type="text" placeholder="Address" name="address" class="form-control" ></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Add</button>
+
+  </form>
+
+ 
+    <%-include('./partials/footer.ejs')%>
+    
